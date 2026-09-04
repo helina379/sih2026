@@ -1,0 +1,35 @@
+/* small base styles for the frontend */
+:root {
+  --bg: #f7fbff;
+  --card: #fff;
+  --text: #0f172a;
+  --muted: #475569;
+}
+
+html,body,#root {
+  height: 100%;
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+}
+
+button {
+  background: #0ea5a4;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+pre {
+  background: var(--card);
+  padding: 12px;
+  border-radius: 6px;
+  color: var(--muted);
+}
